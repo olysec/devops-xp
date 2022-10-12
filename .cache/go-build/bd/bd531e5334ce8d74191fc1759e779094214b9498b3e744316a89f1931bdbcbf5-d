@@ -1,0 +1,6 @@
+./curve.go
+./doc.go
+./p256.go
+./qrsuite.go
+./residue.go
+./suite.go

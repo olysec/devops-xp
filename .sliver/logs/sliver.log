@@ -1,0 +1,66 @@
+[36mINFO[0m[0001] [github.com/dgraph-io/badger@v1.6.1/logger.go:46] All 0 tables opened in 0s 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[33mWARN[0m[0001] [sliver/server/configs/server.go:107] Config file does not exist, using defaults 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[37mDEBU[0m[0001] [sliver/server/configs/server.go:73] Creating config dir /root/.sliver/configs 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:83] Saving config to /root/.sliver/configs/server.json 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[36mINFO[0m[0001] [sliver/server/configs/server.go:83] Saving config to /root/.sliver/configs/server.json 
+[36mINFO[0m[0001] [sliver/server/assets/assets.go:87] No version detected open /root/.sliver/version: no such file or directory 
+[36mINFO[0m[0001] [sliver/server/assets/assets.go:105] Version mismatch  != 2295a995f91f0ca733170bf6bee651ea60c62d0e 
+[36mINFO[0m[0001] [sliver/server/assets/assets.go:127] Unpacking to '/root/.sliver' 
+[36mINFO[0m[0001] [sliver/server/assets/assets.go:129] GOPATH = /root/.sliver/go 
+[36mINFO[0m[0004] [sliver/server/assets/assets.go:223] Creating data directory: /root/.sliver/data 
+[36mINFO[0m[0004] [sliver/server/certs/ca.go:62] Generating certificate authority for 'server' 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:156] Generating TLS certificate (ECC) for '' ... 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:193] Valid from 2019-08-17 01:09:59.676762907 -0300 -03 to 2022-08-16 01:09:59.676762907 -0300 -03 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:198] Serial Number: 244071167283749769150443833751139404828 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:204] Authority certificate 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:217] ExtKeyUsage = [1 2] 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:238] Certificate authenticates host:  
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:250] Certificate is an AUTHORITY 
+[36mINFO[0m[0004] [sliver/server/certs/ca.go:62] Generating certificate authority for 'sliver' 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:156] Generating TLS certificate (ECC) for '' ... 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:193] Valid from 2020-04-01 01:09:59.693972912 -0300 -03 to 2023-04-01 01:09:59.693972912 -0300 -03 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:198] Serial Number: 321335192183517478622289133390250634853 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:204] Authority certificate 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:217] ExtKeyUsage = [1 2] 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:238] Certificate authenticates host:  
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:250] Certificate is an AUTHORITY 
+[36mINFO[0m[0004] [sliver/server/certs/ca.go:62] Generating certificate authority for 'operator' 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:156] Generating TLS certificate (ECC) for '' ... 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:193] Valid from 2020-06-25 01:09:59.708913624 -0300 -03 to 2023-06-25 01:09:59.708913624 -0300 -03 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:198] Serial Number: 236139778980137862653033508789575506559 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:204] Authority certificate 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:217] ExtKeyUsage = [1 2] 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:238] Certificate authenticates host:  
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:250] Certificate is an AUTHORITY 
+[36mINFO[0m[0004] [sliver/server/certs/ca.go:62] Generating certificate authority for 'https' 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:156] Generating TLS certificate (ECC) for '' ... 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:193] Valid from 2020-03-30 01:09:59.724095321 -0300 -03 to 2023-03-30 01:09:59.724095321 -0300 -03 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:198] Serial Number: 151072217177421759001958634993276973476 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:204] Authority certificate 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:217] ExtKeyUsage = [1 2] 
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:238] Certificate authenticates host:  
+[36mINFO[0m[0004] [sliver/server/certs/certs.go:250] Certificate is an AUTHORITY 
+[36mINFO[0m[0004] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[36mINFO[0m[0004] [sliver/server/configs/server.go:44] Loading config from /root/.sliver/configs/server.json 
+[36mINFO[0m[0004] [sliver/server/configs/server.go:83] Saving config to /root/.sliver/configs/server.json 
+[36mINFO[0m[0004] [sliver/server/transport/local.go:38] Binding gRPC to listener ... 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] parsed scheme: "" 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] scheme "" not registered, fallback to default scheme 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] ccResolverWrapper: sending update to cc: {[{bufnet  <nil> 0 <nil>}] <nil> <nil>} 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] ClientConn switching balancer to "pick_first" 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Channel switches to new LB policy "pick_first" 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Subchannel Connectivity change to CONNECTING 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Channel Connectivity change to CONNECTING 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Subchannel picks a new address "bufnet" to connect 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Subchannel Connectivity change to READY 
+[36mINFO[0m[0004] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Channel Connectivity change to READY 
+[36mINFO[0m[0004] [github.com/grpc-ecosystem/go-grpc-middleware@v1.2.0/logging/logrus/payload_interceptors.go:131] server request payload logged as grpc.request.content field 
+[36mINFO[0m[0004] [github.com/grpc-ecosystem/go-grpc-middleware@v1.2.0/logging/logrus/payload_interceptors.go:131] server request payload logged as grpc.request.content field 
+[36mINFO[0m[0004] [github.com/grpc-ecosystem/go-grpc-middleware@v1.2.0/logging/logrus/payload_interceptors.go:131] server response payload logged as grpc.request.content field 
+[36mINFO[0m[0004] [github.com/grpc-ecosystem/go-grpc-middleware@v1.2.0/logging/logrus/server_interceptors.go:95] finished unary call with code OK 
+[36mINFO[0m[0012] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Channel Connectivity change to SHUTDOWN 
+[36mINFO[0m[0012] [google.golang.org/grpc@v1.29.1/internal/grpclog/grpclog.go:33] Subchannel Connectivity change to SHUTDOWN 

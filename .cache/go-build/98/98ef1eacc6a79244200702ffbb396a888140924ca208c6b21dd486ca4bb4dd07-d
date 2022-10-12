@@ -1,0 +1,9 @@
+./const.go
+./curve.go
+./fe.go
+./ge.go
+./ge_mult_vartime.go
+./point.go
+./point_vartime.go
+./scalar.go
+./suite.go

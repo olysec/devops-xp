@@ -1,0 +1,15 @@
+Administrator:aes256-cts-hmac-sha1-96:7c5bc12d4f1d867bb6d39305940296e28fc8dd78e50c16b443d91c3839308f04
+Administrator:aes128-cts-hmac-sha1-96:354989726b16e844a2a22d02461d93e3
+Administrator:des-cbc-md5:f72fe02ae9d97ffb
+krbtgt:aes256-cts-hmac-sha1-96:b4c604798a63f78760bfd4ad9156f7eff7367b45533cb1a7a754a38932eef8b6
+krbtgt:aes128-cts-hmac-sha1-96:7f6ec138ad9681d57050497965d34d6a
+krbtgt:des-cbc-md5:2a1c85168f462f2a
+gohacking.lab\dbadmin:aes256-cts-hmac-sha1-96:bcdc6b8ff580f8813e424e17d9c85e74e177447c5b505625ed96c4a461e2ecc8
+gohacking.lab\dbadmin:aes128-cts-hmac-sha1-96:343ee9e519d9b1626eeec0d701ec7310
+gohacking.lab\dbadmin:des-cbc-md5:673b266dda2c9729
+gohacking.lab\sysdev:aes256-cts-hmac-sha1-96:8e9f3b8bbfa61f938b0ddea3b88630a19f2b8e5bc5eba414e071c08294b75db7
+gohacking.lab\sysdev:aes128-cts-hmac-sha1-96:592cd70995805992309429d07fd0fd85
+gohacking.lab\sysdev:des-cbc-md5:eaae25e0fe29ec9b
+WIN2K19$:aes256-cts-hmac-sha1-96:94458dea0a43e8fc216bbb593ff13cb31e6f44b931d3ab8661867615d9ed5a9e
+WIN2K19$:aes128-cts-hmac-sha1-96:388a5ba61fbd1a2564cbbba0914ed745
+WIN2K19$:des-cbc-md5:e38589f864269129

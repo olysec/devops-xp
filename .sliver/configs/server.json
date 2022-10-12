@@ -1,0 +1,12 @@
+{
+    "daemon_mode": false,
+    "daemon": {
+        "host": "",
+        "port": 31337
+    },
+    "logs": {
+        "level": 5,
+        "grpc_unary_payloads": true,
+        "grpc_stream_payloads": true
+    }
+}

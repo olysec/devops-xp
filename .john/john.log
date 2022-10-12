@@ -1,0 +1,34 @@
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Command line: john --wordlist=rockyou.txt sysdev_hash 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 - Target encoding: CP850
+0:00:00:00 - Rules/masks using CP850
+0:00:00:00 - Hash type: LM (min-len 0, max-len 7, longer passwords split)
+0:00:00:00 - Algorithm: DES 256/256 AVX2
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 8192
+0:00:00:00 Proceeding with wordlist mode
+0:00:00:00 - Wordlist file: rockyou.txt
+0:00:00:00 - memory mapping wordlist (139921507 bytes)
+0:00:00:00 - No word mangling rules
+0:00:00:00 - No stacked rules
+0:00:00:00 + Cracked sysdev
+0:00:00:00 Session completed
+0:00:00:00 Starting a new session
+0:00:00:00 Loaded a total of 1 password hash
+0:00:00:00 Command line: john --wordlist=rockyou.txt --format=NT sysdev_hash 
+0:00:00:00 - UTF-8 input encoding enabled
+0:00:00:00 - Passwords will be stored UTF-8 encoded in .pot file
+0:00:00:00 - Hash type: NT (min-len 0, max-len 27)
+0:00:00:00 - Algorithm: MD4 256/256 AVX2 8x3
+0:00:00:00 - Configured to use otherwise idle processor cycles only
+0:00:00:00 - Will reject candidates longer than 81 bytes
+0:00:00:00 - Candidate passwords will be buffered and tried in chunks of 192
+0:00:00:00 Proceeding with wordlist mode
+0:00:00:00 - Wordlist file: rockyou.txt
+0:00:00:00 - memory mapping wordlist (139921507 bytes)
+0:00:00:00 - No word mangling rules
+0:00:00:00 - No stacked rules
+0:00:00:00 + Cracked sysdev
+0:00:00:00 Session completed

@@ -1,0 +1,8 @@
+./auth.go
+./crypto.go
+./doc.go
+./kex.go
+./marshal.go
+./oprf.go
+./register.go
+./util.go

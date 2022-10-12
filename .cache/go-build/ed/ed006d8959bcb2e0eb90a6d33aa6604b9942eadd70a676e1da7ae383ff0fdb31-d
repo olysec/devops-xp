@@ -1,0 +1,3 @@
+./core.go
+./metadata.go
+./report.go

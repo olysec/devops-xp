@@ -1,0 +1,13 @@
+./constants.go
+./curve.go
+./gfp.go
+./gfp12.go
+./gfp2.go
+./gfp6.go
+./gfp_decl.go
+./group.go
+./optate.go
+./point.go
+./suite.go
+./twist.go
+./gfp_amd64.s
