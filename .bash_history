@@ -45,3 +45,49 @@ lsblk
 vim /etc/fstab 
 vim /etc/fstab 
 reboot 
+cat /etc/fstab 
+lsblk 
+history 
+:49
+lsblk 
+w
+ifconfig 
+ls
+pwd
+vim script-IAC2.sh
+ls
+git init
+git add .
+git commit -m "Apache v.1.0"
+git branch -M main
+git remote add origin https://github.com/olysec/linux-projeto2-IAc.git
+git push -u origin main
+ping 8.8.8.8
+cat /etc/resolv.conf 
+vim /etc/resolv.conf 
+ping 8.8.8.8
+route -n
+ping 172.16.192.2
+ifconfig 
+dhclient eth1
+ifconfig 
+ping 172.16.192.2
+ping 8.8.8.8
+ifconfig eth1 down
+ifconfig 
+ping 8.8.8.8
+ifconfig eth1 up
+ifconfig 
+ping 8.8.8.8
+ifconfig eth1 on
+ifconfig 
+ifconfig 
+ping 8.8.8.8
+ping 8.8.8.8
+cat /etc/resolv.conf 
+w
+vim /etc/resolv.conf 
+ping 8.8.8.8
+ifconfig eth1 up
+ping 8.8.8.8
+reboot
